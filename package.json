@@ -1,0 +1,19 @@
+{
+  "name": "soul-inbox",
+  "version": "1.0.0",
+  "description": "Soul Hospitality omnichannel inbox: Messenger, Instagram, WhatsApp, comments, lead stages, SLA routing and analytics",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "node --watch --disable-warning=ExperimentalWarning server/index.js",
+    "test": "node --disable-warning=ExperimentalWarning --test \"test/**/*.test.js\""
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "express": "^5.2.1"
+  }
+}
